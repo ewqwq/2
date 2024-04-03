@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#square {
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#input {
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 736px) {
+    #square {
+        width: 80vw;
+        height: 80vw;
+        max-width: 200px;
+        max-height: 200px;
+    }
+    #input {
+        width: 80vw;
+        max-width: 200px;
+    }
+}
